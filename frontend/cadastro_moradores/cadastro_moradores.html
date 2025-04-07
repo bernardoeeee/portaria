@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro_moradores.css">
+    <title>Portaria</title>
+</head>
+
+<body>
+    <main>
+        <div id="container" class="container">
+            <div class="login-box">
+                <h3>Cadastro</h3>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="nome" name="name" required>
+
+                    <label for="Bloco">Bloco:</label>
+                    <input placeholder="A, B, C ou D" type="text" maxlength="1" id="bloco" name="Bloco" required>
+
+                    <label for="Apartamento">Apartamento:</label>
+                    <input placeholder="5 andares" type="text" maxlength="3" id="apartamento" name="Apartamento" required>
+
+                    <label for="Telefone">Telefone:</label>
+                    <input type="text" maxlength="9" id="telefone" name="Telefone" required>
+
+                    <label for="Email">Email:</label>
+                    <input type="email" maxlength="255" id="email" name="Email" required>
+
+                    <div class="escolher"><label for="Status" id="selecionar_status">Status:</label></div>
+                    <select class="status" id="status">
+                        <option value="residente">Residente</option>
+                        <option value="proprietario">Proprietário</option>
+                        <option value="visitante">Visitante</option>
+                    </select>
+
+
+                </form>
+            </div>
+        </div>
+
+        <div id="container" class="container">
+            <div class="login-box">
+                <h3>Cadastro Carro</h3>
+                <!-- <select name="" id="">
+
+                </select> -->
+                <form>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa" maxlength="7" minlength="7" name="placa" required>
+
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" required>
+
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" name="cor" required>
+
+                    <label for="box">Box:</label>
+                    <input type="text" maxlength="3" id="box" name="box" required>
+
+                    <div class="botao">
+                        <button type="submit" onclick="cadastro(event)">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <p id="sizeInfo"></p>
+
+    <script src="cadastro_moradores.js"></script>
+</body>
+
+</html>
